@@ -3,9 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-icons": "^3.7.0",
+    "react-jimage": "^1.2.7",
+    "react-router-dom": "^5.0.1",
+    "react-router-sitemap": "^1.2.0",
+    "react-scripts": "3.0.1",
+    "react-scrollbars-custom": "^4.0.5",
+    "react-slick": "^0.24.0",
+    "react-spring": "^8.0.25",
+    "react-tippy": "^1.2.3",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
