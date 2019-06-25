@@ -1,10 +1,10 @@
 import React from 'react'
-
+import WorkDetails from '../components/WorkDetails'
 
 export default props => {
 
-  return <>
-    <p>Work Details</p>
-  </>
+  const { match: { params }} = props;
+
+  return <WorkDetails id={params.id} />
 
 }

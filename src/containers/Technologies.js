@@ -43,10 +43,6 @@ const Tech = props => {
 
   const { onStart } = props;
   const trail = useTrail(data.length, {
-    from: {
-      opacity: 0,
-    },
-    opacity: 1,
     delay: 500,
     onStart
   });
@@ -54,7 +50,6 @@ const Tech = props => {
   return trail.map((style, index) => (
       <animated.div
         key={`techgroup_${index}`}
-        style={style}
         className="tech-group"
       ><TechGroup group={data[index]} /></animated.div>
     ))

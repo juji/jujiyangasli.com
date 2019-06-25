@@ -7059,9 +7059,9 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
 
-react-jimage@^1.2.7:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/react-jimage/-/react-jimage-1.2.7.tgz#1a1c0b7d069cdfb85f3681409ed35dcb94438ecc"
+react-jimage@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/react-jimage/-/react-jimage-1.2.8.tgz#23574f22d407c5195f1d94a4ac3bad290a08144a"
   dependencies:
     react-spring "^8.0.25"
 

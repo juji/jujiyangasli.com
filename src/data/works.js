@@ -58,17 +58,6 @@ module.exports = [
     ]
   },
   {
-    id: 'flightdrop',
-    title:'Flightdrop',
-    url: 'https://www.flightdrop.co/',
-    images: [
-      {
-        url: 'https://lh3.googleusercontent.com/3BIpkOotN4cya1WYiU2widv8wIq7pOClUzAKFgmTSlsVtbZZpiTtPNJGM676e7r-ep8mRPG-ffaoroHDpT52vtUgfBdZqho7JUZDwPdD-WXKlh-mRkPhUUEXipORNxBss3MTgRGxFWxUborG5luZv6VtdjfVD4gcYReWminkFgnMANfxYrRTDscHw5IH2dxFtxcJ1Yzlohk5zH5v4XUJwg9Cxj4axUkGjg4gqUk5LXNw-BQ11jie5WHsAhUxr3MGlWePRmAMJv9J5dDOHIb9w6JY4lpxCDXijuMgxk6DHoydb9OPxxX7gotKUr_HxGtHsBI_xd5b7-7nHtJRd9yL5lLUtpEKYnfLoCSSXgi7-XpTJ5XSEUOnygtxNP8FAwN72nTc-T9vceC9WuQcUm90sNfnVdW3JZHdr6rm-5BCUKoULs7gRm0dvqO-DsEODFzBorXQVmON2nEoWsk-zcTQ4ApATCoOb0y8N-LvxPxn3ZZDyNb23W-euIQMTAsMLTOwtZzsvU7mQfT3uf5Fr0FB7jzhvofUN0Humt8TSfwF_ncCEKQmtMazG5KfG0UyebshhQgZr-ukzPIXFK0pNKT8E2sQ--xiYKtVYCZbEpQhjW96yXlooH0M_bYSTWHLJBgnSFMUKtE7_UtU5l4g-2pQuv9p=w1268-h767-no',
-        title: 'asdf'
-      }
-    ]
-  },
-  {
     id: 'amber',
     title:'Amber Video',
     url: 'https://app.ambervideo.co/',

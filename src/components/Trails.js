@@ -5,7 +5,7 @@ export default props => {
 
   const {components, component, transition, style, prefix} = props
   const trail = useTrail(components.length, transition);
-  const Comp = useMemo(() => component || animated.div,[])
+  const Comp = useMemo(() => component || animated.div,[ component ])
 
   return trail.map((p, index) => (<Comp
       key={`${prefix}_${index}`}

@@ -37,7 +37,7 @@ export default props => {
       group.forEach(v => {
         const m = new Image();
         m.onload = function(){
-          console.log(m)
+          // console.log(m)
         };
         m.src = v.image
       })
@@ -45,12 +45,12 @@ export default props => {
   },[])
 
   return <Layout>
-    { viewCanvas ? <canvas ref={canvas}></canvas> : (canvas.current = null) }
-    <Logo />
-    <Content className={cn({ full: !!fullContent })}>
-      <Routes />
-    </Content>
-    <Nav showHome={props.location.pathname !== '/'} className={cn({ bottom: !!fullContent })} />
-  </Layout>
+      { viewCanvas ? <canvas ref={canvas}></canvas> : (canvas.current = null) }
+      <Logo />
+      <Content className={cn({ full: !!fullContent })}>
+        <Routes />
+      </Content>
+      <Nav showHome={props.location.pathname !== '/'} className={cn({ bottom: !!fullContent })} />
+    </Layout>
 
 }
