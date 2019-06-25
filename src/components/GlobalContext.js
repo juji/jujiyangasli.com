@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useCallback } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 const initial = {
   touch: false
@@ -8,20 +8,21 @@ const GlobalContext = React.createContext(initial);
 const useGlobalContext = () => useContext(GlobalContext);
 
 const GlobalProvider = ({ children }) => {
+
   const [ context, setContext] = useState({ ...initial });
 
-
-  const onFirstTouch = useCallback(() => {
-    setContext({ ...context, touch: true })
-    window.removeEventListener('touchstart', onFirstTouch, false);
-  },[ context ])
-
   useEffect(() => {
+
+    const onFirstTouch = () => {
+      setContext({ ...context, touch: true })
+      window.removeEventListener('touchstart', onFirstTouch, false);
+    }
 
     // handle touch event
     window.addEventListener('touchstart', onFirstTouch, false);
     return window.removeEventListener('touchstart', onFirstTouch, false);
-  },[ onFirstTouch ])
+
+  },[ context ])
 
   return (
     <GlobalContext.Provider value={context}>

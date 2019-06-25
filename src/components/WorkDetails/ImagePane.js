@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import Jimage from 'react-jimage'
 import Slider from "react-slick";
 
 import { MdSearch, MdClose } from "react-icons/md";
+import { useGlobalContext } from '../GlobalContext'
 
 
 const Container = styled.div`
@@ -92,8 +93,9 @@ const sliderSettings = {
 export default props => {
 
   const { images, onFullScreen } = props;
-  const [ index, setIndex ] = useState(0)
-  const [ fullScreen, setFullScreen ] = useState(0)
+  const [ index, setIndex ] = useState(0);
+  const [ fullScreen, setFullScreen ] = useState(0);
+  const { touch } = useGlobalContext();
 
   const resize = () => {
     onFullScreen && onFullScreen(!fullScreen)
@@ -114,14 +116,14 @@ export default props => {
           }}
           className="slider-component"
         >{images.map(v => <div className="image-in-slider-container" key={v.url}>
-          <img className="image-in-slider" src={v.url} />
+          <img alt={v.title} className="image-in-slider" src={v.url} />
         </div>)}</Slider>
       </div>
     </div>
     <div className="image-text">
-      <p>{images[index].title}</p>
+      <p>{fullScreen ? '' : images[index].title}</p>
       <p>{ fullScreen ? (
-        'zoom with mouse wheel, drag with mouse'
+        touch ? 'pinch to zoom, touch to drag.' : 'zoom with mouse wheel, drag with mouse.'
       ) : `image ${index+1} of ${images.length}`}</p>
       <a href="javascript:;" onClick={resize}>
         {fullScreen ? <MdClose /> : <MdSearch />}

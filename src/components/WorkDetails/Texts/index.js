@@ -12,7 +12,7 @@ const TextContainer = styled.div`
 
 export default props => {
 
-  const { id, children, ...rest } = props
+  const { id } = props
   const [ Comp, setComp ] = useState();
   const [ error, setErr ] = useState(false);
 

@@ -123,7 +123,7 @@ const ImagePane = props => {
 }
 
 const TextPane = props => {
-  const { work, fullScreen } = props;
+  const { work } = props;
   const transitions = useTransition(true, null, {
     from: { x: 100 },
     enter: { x: 0 },

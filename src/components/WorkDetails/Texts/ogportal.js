@@ -3,7 +3,7 @@ import React from 'react'
 export default props => {
 
   return <div>
-    <div><a href="https://portal.outsourcedglobal.com/" target="_blank">
+    <div><a href="https://portal.outsourcedglobal.com/" rel="noopener noreferrer" target="_blank">
       https://portal.outsourcedglobal.com/
     </a></div>
     <p>A Company Portal, for other companies..</p>
@@ -20,10 +20,10 @@ export default props => {
     <p>Yes, I'm a nerd.</p>
     <br />
     <p>Techs used:&nbsp;
-      <a href="https://expressjs.com/" target="_blank">ExpressJS</a>,&nbsp;
-      <a href="https://reactjs.org/" target="_blank">ReactJS</a>,&nbsp;,&nbsp;
-      <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>,&nbsp;
-      <a href="https://aws.amazon.com/s3/" target="_blank">AWS-S3</a>.
+      <a href="https://expressjs.com/" rel="noopener noreferrer" target="_blank">ExpressJS</a>,&nbsp;
+      <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">ReactJS</a>,&nbsp;,&nbsp;
+      <a href="https://www.mongodb.com/" rel="noopener noreferrer" target="_blank">MongoDB</a>,&nbsp;
+      <a href="https://aws.amazon.com/s3/" rel="noopener noreferrer" target="_blank">AWS-S3</a>.
     </p>
   </div>
 

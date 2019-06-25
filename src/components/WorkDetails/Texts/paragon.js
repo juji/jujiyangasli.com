@@ -3,13 +3,13 @@ import React from 'react'
 export default props => {
 
   return <div>
-    <div><a href="https://www.soloparagonhotel.com/" target="_blank">https://www.soloparagonhotel.com/</a></div>
+    <div><a href="https://www.soloparagonhotel.com/" rel="noopener noreferrer" target="_blank">https://www.soloparagonhotel.com/</a></div>
     <p>The First website of my creation, that i like. Developed with PHP, MySql.</p>
     <p>Using CPanel as a server management tool.</p>
     <p>It was 2012, i guess... I don't remember.</p>
     <p>
-      I had a great time creating this site. The client was great: <a href="https://www.tauziahotels.com/">https://www.tauziahotels.com/</a>.
-      The designer was awesome: <a href="http://visious.co/" target="_blank">http://visious.co/</a>.
+      I had a great time creating this site. The client was great: <a target="_blank" rel="noopener noreferrer" href="https://www.tauziahotels.com/">https://www.tauziahotels.com/</a>.
+      The designer was awesome: <a href="http://visious.co/" rel="noopener noreferrer" target="_blank">http://visious.co/</a>.
     </p>
     <p>
       I worked in visious at the time. The team was cute and heart warming.
