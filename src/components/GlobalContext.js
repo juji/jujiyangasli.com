@@ -14,15 +14,14 @@ const GlobalProvider = ({ children }) => {
   useEffect(() => {
 
     const onFirstTouch = () => {
-      setContext({ ...context, touch: true })
-      window.removeEventListener('touchstart', onFirstTouch, false);
+      setContext({ touch: true })
+      document.removeEventListener('touchstart', onFirstTouch);
     }
 
     // handle touch event
-    window.addEventListener('touchstart', onFirstTouch, false);
-    return window.removeEventListener('touchstart', onFirstTouch, false);
+    document.addEventListener('touchstart', onFirstTouch);
 
-  },[ context ])
+  },[])
 
   return (
     <GlobalContext.Provider value={context}>
