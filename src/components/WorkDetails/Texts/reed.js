@@ -8,8 +8,8 @@ export default props => {
     <p>A system to prevent flooding in urban areas, where the flood comes from the inside of the building</p>
     <p>What a great way to help people...</p>
     <br />
-    <p>Technologies used:&nbsp;
-      <a href="https://nextjs.org/" rel="noopener noreferrer" target="_blank">NextJS</a>,&nbsp;
+    <p>Technologies&nbsp;used:{' '}
+      <a href="https://nextjs.org/" rel="noopener noreferrer" target="_blank">NextJS</a>,{' '}
       <a href="https://www.digitalocean.com/" rel="noopener noreferrer" target="_blank">DigitalOcean</a>.
     </p>
   </div>

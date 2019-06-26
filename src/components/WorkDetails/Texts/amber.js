@@ -14,7 +14,7 @@ export default props => {
     <br />
     <p>Shamir asked me to work with Roderick for this, so I helped Roderick on the frontend and it's API.</p>
     <br />
-    <p>Techs used on my side of the job:&nbsp;
+    <p>Techs used on my side of the job:{' '}
       <a href="https://expressjs.com/" rel="noopener noreferrer" target="_blank">ExpressJS</a>,&nbsp;
       <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">ReactJS</a>,&nbsp;
       <a href="https://www.mongodb.com/" rel="noopener noreferrer" target="_blank">MongoDB</a>,&nbsp;
