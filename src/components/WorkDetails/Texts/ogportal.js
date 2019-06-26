@@ -21,7 +21,7 @@ export default props => {
     <br />
     <p>Techs used:&nbsp;
       <a href="https://expressjs.com/" rel="noopener noreferrer" target="_blank">ExpressJS</a>,&nbsp;
-      <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">ReactJS</a>,&nbsp;,&nbsp;
+      <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">ReactJS</a>,&nbsp;
       <a href="https://www.mongodb.com/" rel="noopener noreferrer" target="_blank">MongoDB</a>,&nbsp;
       <a href="https://aws.amazon.com/s3/" rel="noopener noreferrer" target="_blank">AWS-S3</a>.
     </p>
