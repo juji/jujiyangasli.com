@@ -5,7 +5,7 @@ export default props => {
   return <div>
     <div><a target="_blank" rel="noopener noreferrer" href="https://reedwater.io">https://reedwater.io</a></div>
     <p>The project is ongoing..</p>
-    <p>A system to prevent flooding in urban areas, where the flood comes from the inside of the building</p>
+    <p>A system to prevent flooding in urban areas, where the flood comes from inside of the buildings</p>
     <p>What a great way to help people...</p>
     <br />
     <p>Technologies&nbsp;used:{' '}
