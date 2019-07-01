@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "push": "git add -A; git commit -am ",
-    "postpush": "yarn deploy",
+    "postpush": "git push origin master && yarn deploy",
     "predeploy": "yarn build && printf 'www.jujiyangasli.com' > build/CNAME",
     "deploy": "gh-pages -d build"
   },
