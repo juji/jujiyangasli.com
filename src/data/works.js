@@ -27,6 +27,17 @@ module.exports = [
     ]
   },
   {
+    id: 'clubrow',
+    title:'Clubrow',
+    url: ['https://www.clubrowfitness.com/'],
+    images: [
+      {
+        url: 'https://lh3.googleusercontent.com/s2Ds6WfKHQ2Pwhe20Frkkf3MYI6jRvxgHA8T8K30hxF1_D8otj6XBIu9dfsD8nhoeGuF2cG5JGTVOngwKUAKMMMtk3w4SX6rsHRzOr-RhGJFkbmz4pNnRcRlJZkCkGdPBsybUb3yyw=w1440-h739-no',
+        title: 'Homepage'
+      }
+    ]
+  },
+  {
     id: 'ogportal',
     title:'OG Portal',
     url: ['https://portal.outsourcedglobal.com', 'https://ipa.outsourcedglobal.com'],

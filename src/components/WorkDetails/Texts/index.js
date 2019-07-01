@@ -17,7 +17,7 @@ export default props => {
   const [ error, setErr ] = useState(false);
 
   useEffect(() => {
-    console.log(id)
+    // console.log(id)
     setErr(null)
     setComp(false)
     import(`./${id}`)
