@@ -1,0 +1,13 @@
+image: node:lts-strecth
+
+
+pages:
+  stage: deploy
+  script:
+    - yarn
+    - yarn build
+  artifacts:
+    paths:
+      - build
+  only:
+    - dev
