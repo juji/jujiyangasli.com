@@ -5,7 +5,7 @@ pages:
   stage: deploy
   script:
     - yarn
-    - yarn build
+    - CI=false yarn build
   artifacts:
     paths:
       - build
