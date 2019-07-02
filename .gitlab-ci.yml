@@ -1,8 +1,10 @@
-image: buildkite/puppeteer
+image: node:lts-stretch
 
 
 pages:
   stage: deploy
+  script:
+    - echo 'asdf'
   artifacts:
     paths:
       - _build
