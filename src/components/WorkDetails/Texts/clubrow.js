@@ -5,7 +5,7 @@ export default props => {
   return <div>
     <div><a target="_blank" rel="noopener noreferrer" href="https://www.clubrowfitness.com/">https://www.clubrowfitness.com/</a></div>
     <p>This is not even a web job..</p>
-    <p>haha..</p>
+    <p>Haha.. But it reminds me to the importance of exercise. So, exercise!</p>
     <br />
     <p>
       I was working with <a href="https://cnd.digital/" target="_blank" rel="noopener noreferrer">CND</a>. We had Clubrow as a client.

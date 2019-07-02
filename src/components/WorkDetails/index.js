@@ -99,7 +99,7 @@ const WorkHeader = props => {
     }}
   >
     <h1>{work.title}</h1>
-    <Link to="/works">&times;</Link>
+    <Link to="/work">&times;</Link>
   </animated.div>)
 }
 

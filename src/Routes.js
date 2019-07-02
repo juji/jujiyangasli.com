@@ -6,12 +6,14 @@ import Contacts from './containers/Contacts'
 import Works from './containers/Works'
 import WorkDetails from './containers/WorkDetails'
 import Technologies from './containers/Technologies'
+import Play from './containers/Play'
 
 export const sitemap = (
   <Switch>
     <Route path="/contacts" component={Contacts} />
-    <Route path="/works/:id" component={WorkDetails} />
-    <Route path="/works" component={Works} />
+    <Route path="/work/:id" component={WorkDetails} />
+    <Route path="/play" component={Play} />
+    <Route path="/work" component={Works} />
     <Route path="/technologies" component={Technologies} />
     <Route component={Home} />
   </Switch>

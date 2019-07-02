@@ -7,7 +7,7 @@ import Trails from '../components/Trails'
 
 const components = data.map((work,i) => (
   <>
-    <Link to={`/works/${work.id}`}>
+    <Link to={`/work/${work.id}`}>
       <img alt={work.title} src={work.images[0].url} />
       <span>{work.title}</span>
     </Link>
@@ -18,7 +18,7 @@ export default (props) => {
 
   return <div>
   <h2>
-    <span className="blue">Works</span><br />
+    <span className="blue">Work</span><br />
     <small><small><small>Things i'm being paid for</small></small></small>
   </h2>
   <div>

@@ -34,7 +34,8 @@ export default (props) => <NavContainer
   className={cn(props.className||{}, "nav")}
 >
   {props.showHome ? <Link to="/"><TiHome size="21px" /></Link> : '' }
-  <Link to="/works">Works</Link>
+  <Link to="/work">Work</Link>
+  {/* <Link to="/play">Play</Link> */}
   <Link to="/technologies">Technologies</Link>
   <Link to="/contacts">Contacts</Link>
 </NavContainer>

@@ -14,8 +14,9 @@ export default props => {
 
   const fullContent = [
     /^\/technologies$/,
-    /^\/works(\/|$)/,
+    /^\/work(\/|$)/,
     /^\/contacts$/,
+    /^\/play$/,
   ].find(v => v.test(props.location.pathname))
 
   const viewCanvas = /^\/$/.test(props.location.pathname)
