@@ -1,4 +1,4 @@
-image: node:lts-strecth
+image: node:lts-stretch
 
 
 pages:
