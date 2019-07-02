@@ -3,11 +3,8 @@ image: buildkite/puppeteer
 
 pages:
   stage: deploy
-  script:
-    - yarn
-    - CI=false yarn build
   artifacts:
     paths:
-      - build
+      - _build
   only:
     - dev
