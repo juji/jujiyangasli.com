@@ -4,9 +4,10 @@ image: node:lts-stretch
 pages:
   stage: deploy
   script:
-    - echo 'asdf'
+    - rm -rf public
+    - mv _build public
   artifacts:
     paths:
-      - _build
+      - public
   only:
     - dev
