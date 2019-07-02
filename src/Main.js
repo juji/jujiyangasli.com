@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import Routes from './Routes'
 import cn from 'classnames'
 
@@ -12,16 +12,22 @@ import tech from './data/tech'
 
 export default props => {
 
-  const fullContent = [
-    /^\/technologies$/,
-    /^\/work(\/|$)/,
-    /^\/contacts$/,
-    /^\/play$/,
-  ].find(v => v.test(props.location.pathname))
+  const [fullContent, setFullContent ] = useState(false)
 
   const viewCanvas = /^\/$/.test(props.location.pathname)
   const canvas = useRef()
   const pendulum = useRef();
+
+  useEffect(() => {
+
+    setFullContent(!![
+      /^\/technologies$/,
+      /^\/work(\/|$)/,
+      /^\/contacts$/,
+      /^\/play$/,
+    ].find(v => v.test(props.location.pathname)))
+
+  },[ props.location.pathname ])
 
   useEffect(() => {
     if(pendulum.current && pendulum.current.stop) pendulum.current.stop();
