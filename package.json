@@ -27,7 +27,10 @@
     "push": "git add -A; git commit -am ",
     "postpush": "git push origin master && yarn deploy",
     "predeploy": "yarn build && printf 'www.jujiyangasli.com' > build/CNAME",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prestaging": "git add -A; git commit -am ",
+    "staging": "git push dev dev && yarn build && cp .gitlab-ci.yml build/.gitlab-ci.yml",
+    "poststaging": "gh-pages -d build --remote dev"
   },
   "reactSnapshot": {
     "snapshotDelay": 1000

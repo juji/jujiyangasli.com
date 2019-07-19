@@ -12,7 +12,7 @@ import tech from './data/tech'
 
 export default props => {
 
-  const [fullContent, setFullContent ] = useState(false)
+  const [ fullContent, setFullContent ] = useState(false)
 
   const viewCanvas = /^\/$/.test(props.location.pathname)
   const canvas = useRef()
