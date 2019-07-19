@@ -1,0 +1,16 @@
+image: node:lts-stretch
+
+
+pages:
+  stage: deploy
+  script:
+    - rm -rf .public || true
+    - mkdir .public
+    - cp -r * .public
+    - rm -rf public || true
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - gh-pages

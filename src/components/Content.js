@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import cn from 'classnames'
 import styled from 'styled-components'
 import RSC from "react-scrollbars-custom";
+import { withRouter } from "react-router";
 
 const Content = styled.div`
   transition: all 500ms;
@@ -15,6 +16,17 @@ const Content = styled.div`
   }
 `
 
-export default p => <Content
-  className={cn(p.className||{},"content")}
-><RSC>{p.children}</RSC></Content>
+export default withRouter(p => {
+
+  console.log(p)
+
+  const scroll = useRef()
+  useEffect(() => {
+    scroll.current && scroll.current.scrollTo(0,0)
+  },[ p.location && p.location.pathname ])
+
+  return <Content
+    className={cn(p.className||{},"content")}
+  ><RSC ref={scroll}>{p.children}</RSC></Content>
+
+})

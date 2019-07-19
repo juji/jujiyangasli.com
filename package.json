@@ -26,6 +26,8 @@
     "eject": "react-scripts eject",
     "push": "git add -A; git commit -am ",
     "postpush": "git push origin master && yarn deploy",
+    "push:dev": "git add -A; git commit -am ",
+    "postpush:dev": "yarn build && gh-pages -d build --remote dev",
     "predeploy": "yarn build && printf 'www.jujiyangasli.com' > build/CNAME",
     "deploy": "gh-pages -d build",
     "prestaging": "git add -A; git commit -am ",
