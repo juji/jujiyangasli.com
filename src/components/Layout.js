@@ -26,7 +26,6 @@ export default styled.div`
   }
 
   &>.content{
-    min-height: 333px;
     flex: 0 0 auto;
     overflow: auto;
     padding:0px 55px;
