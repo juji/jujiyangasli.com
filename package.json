@@ -19,15 +19,21 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently 'react-scripts start' 'yarn tunnel'",
     "build": "react-scripts build",
     "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "push:test": "git add -A; git commit -am ",
+    "postpush:test": "git push test master && yarn deploy:test",
+    "predeploy:test": "yarn build && printf 'test.jujiyangasli.com' > build/CNAME",
+    "deploy:test": "gh-pages -d build --remote test",
     "push": "git add -A; git commit -am ",
     "postpush": "git push origin master && yarn deploy",
     "predeploy": "yarn build && printf 'www.jujiyangasli.com' > build/CNAME",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "tunnel": "ssh -vnNT -R 3000:localhost:3000 141.136.47.130",
+    "publish": "yarn build; yarn deploy; yarn push "
   },
   "reactSnapshot": {
     "snapshotDelay": 1000
@@ -48,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^4.1.2",
     "react-snap": "^1.23.0",
     "react-snapshot": "^1.3.0"
   }
