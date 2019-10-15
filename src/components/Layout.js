@@ -27,7 +27,8 @@ export default styled.div`
 
   &>.content{
     flex: 0 0 auto;
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
     padding:0px 55px;
     box-sizing: border-box;
     position: relative;
@@ -39,10 +40,7 @@ export default styled.div`
 
   &>.nav{
     flex: 0 0 auto;
-    padding:0px 55px;
     position: relative;
   }
-
-
 
 `

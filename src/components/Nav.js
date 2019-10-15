@@ -10,6 +10,7 @@ export const NavContainer = styled.nav`
 
   line-height: 89px;
   background-color: transparent;
+  padding:0px 55px;
 
   a{
     display:inline-block;
@@ -24,6 +25,13 @@ export const NavContainer = styled.nav`
 
   &.bottom{
     background-color: #000000;
+  }
+
+  @media (max-width: 768px) {
+    &.bottom{
+      line-height: 55px;
+      padding:0px 34px;
+    }
   }
 
   transition: all 500ms;
