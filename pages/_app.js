@@ -33,7 +33,7 @@ class MyApp extends App {
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
           <meta name="theme-color" content="#000000" />
           <meta name="description" content="Juji is a web developer. Living in Tangerang, Indonesia. Doing what he loves best." />
-          <meta property="og:image" content="http://j.mp/2GYbJeT" />
+          <meta property="og:image" content="https://i.ibb.co/Tt0P95v/Screen-Shot-2018-11-29-at-21-18-48.png" />
 
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro|Source+Serif+Pro" rel="stylesheet" />

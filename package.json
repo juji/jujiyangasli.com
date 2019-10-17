@@ -16,7 +16,7 @@
     "push": "git add -A; git commit -am ",
     "postpush": "git push origin master && yarn deploy",
     "predeploy": "yarn build && yarn export && printf 'www.jujiyangasli.com' > out/CNAME && printf '' > out/.nojekyll",
-    "deploy": "gh-pages -d out --dotfiles",
+    "deploy": "gh-pages -d out --remote origin --dotfiles",
     "tunnel:juji": "ssh -vnNT -R 3000:localhost:3000 141.136.47.130",
     "tunnel": "ssh -R juji:80:localhost:3000 serveo.net",
     "tunnel:serve": "ssh -R juji:80:localhost:5000 serveo.net",
