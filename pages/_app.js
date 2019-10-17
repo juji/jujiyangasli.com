@@ -29,6 +29,7 @@ class MyApp extends App {
     return <ThemeProvider theme={theme()}>
         <Head>
           <meta charSet="utf-8" />
+          <title>Juji | Web Developer</title>
           <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
           <meta name="theme-color" content="#000000" />
