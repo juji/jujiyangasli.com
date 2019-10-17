@@ -111,7 +111,7 @@ export default withRouter(({ router, children }) => {
 
     { isHome ? <canvas ref={canvas}></canvas> : (canvas.current = null) }
 
-    <div className='top-layout'>
+    <div className='top-layout scrollbar'>
       { fullContent ? null : <Logo home={isHome}>
         <h1><Link href="/"><a>juji };</a></Link></h1>
       </Logo> }

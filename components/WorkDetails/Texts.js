@@ -19,5 +19,5 @@ const TextContainer = styled.div`
 export default props => {
 
   const { text } = props
-  return <TextContainer>{ text }</TextContainer>
+  return <TextContainer className="scrollbar">{ text }</TextContainer>
 }
