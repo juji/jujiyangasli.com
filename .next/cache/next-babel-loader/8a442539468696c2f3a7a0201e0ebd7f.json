@@ -1,1 +1,0 @@
-{"ast":null,"code":"import mobile from 'is-mobile';\nexport default (function () {\n  return {\n    mobile: mobile({\n      tablet: true\n    }),\n    background: '#03080e',\n    text: '#ffffff',\n    blue: '#71b1f9'\n  };\n});","map":null,"metadata":{},"sourceType":"module"}
